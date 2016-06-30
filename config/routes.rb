@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-root 'dictionary#index'
+  devise_for :users
+root 'top#index'
 end
