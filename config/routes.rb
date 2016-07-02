@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resource :users, only: [:show, :edit, :update]
+  resources :users, only: [:show, :edit, :update]
+  resources :questions, only: [:create]
 root 'top#index'
 end
