@@ -8,7 +8,7 @@
  <%= form_for(@question) do |f| %>
  <%= f.text_field :text %>
  <%= f.submit "Q" %>
- 
+ </div>
  </div>
 <%= render partial: "questions/question", collection: @questions %>
 <% end %>
